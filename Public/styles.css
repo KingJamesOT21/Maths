@@ -275,6 +275,7 @@ footer {
     font-family: "kiro", sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 20px;
 }
 
 /*Adaptive Display*/
@@ -285,6 +286,7 @@ footer {
     .navbar-mobile {
         display: flex;
     }
+    /*hero*/
     .hero {
         flex-direction: column;
         justify-content: center;
@@ -294,6 +296,7 @@ footer {
         width: 100vw;
         height: 50vh;
         padding: 10px 100px 20px 100px;
+        text-align: center;
     }
     .right {
         width: 100vw;
@@ -302,6 +305,37 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    /*Info*/
+    .info-text {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .info-text h1{
+        padding-bottom: 20px;
+    }
+    .icons {
+        padding-bottom: 75px;
+    }
+    /*content*/
+    .content {
+        flex-direction: column-reverse;
+        padding: 0px 20px 0px 20px;
+        height: 500px;
+    }
+    .content img {
+        height: 20vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: top;
+    }
+    .content-text {
+        text-align: center;
+        padding-top: 75px;
+    }
+
 }
 
 @media (max-width: 1024px) {
