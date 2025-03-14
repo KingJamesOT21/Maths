@@ -125,7 +125,7 @@
     font-family: "kiro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(255, 254, 201);
+    background-color: rgb(225, 223, 223);
 }
 .info-text {
     display: flex;
@@ -143,6 +143,32 @@
     padding: 0 100px 40px 100px;
 }
 
+/*Content Section!*/
+.content {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 200px 0 200px;
+}
+.content img {
+    height: 400px;
+}
+.content h1 {
+    font-family: "kiro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+.content p {
+    font-family: "kiro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 20px;
+}
+
+
+/*Footer!*/
 footer {
     border: 1px solid grey;
     display: flex;
