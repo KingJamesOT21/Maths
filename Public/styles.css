@@ -209,3 +209,101 @@ footer {
 
     font-size: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 75px 40px 75px;
+    display: none;
+}
+.logo-mobile {
+    font-family: "kiro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Adaptive Display*/
+@media (max-width: 756px) {
+    .navbar {
+        display: none;
+    }
+    .navbar-mobile {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left {
+        width: 100vw;
+        height: 50vh;
+        padding: 10px 100px 20px 100px;
+    }
+    .right {
+        width: 100vw;
+        height: 85vh;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+}
