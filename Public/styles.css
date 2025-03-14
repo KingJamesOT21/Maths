@@ -170,7 +170,7 @@
 
 /*Footer!*/
 footer {
-    border: 1px solid grey;
+    background-color: rgb(47, 47, 47);
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -180,11 +180,11 @@ footer {
     font-family: "kiro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: rgb(65, 65, 65);
+    color: rgb(255, 255, 255);
 }
 .footer-logo {
     margin: 40px;
-    color: #373737;
+    color: #ffffff;
     font-size: 25px;
 }
 .footer-text ul{
@@ -196,12 +196,12 @@ footer {
 
 .footer-text a {
     text-decoration: none;
-    color: grey;
+    color: rgb(255, 255, 255);
 }
 
 .divider {
     height: 1px;
-    background-color: rgb(131, 131, 131);
+    background-color: rgb(255, 255, 255);
     width: 50vw;
 }
 
@@ -275,6 +275,7 @@ footer {
     font-family: "kiro", sans-serif;
     font-weight: 800;
     font-style: normal;
+    font-size: 20px;
 }
 
 /*Adaptive Display*/
@@ -285,15 +286,22 @@ footer {
     .navbar-mobile {
         display: flex;
     }
+    /*hero*/
     .hero {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 1100px;
     }
     .left {
         width: 100vw;
         height: 50vh;
-        padding: 10px 100px 20px 100px;
+        padding: 40px 100px 20px 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .right {
         width: 100vw;
@@ -301,6 +309,45 @@ footer {
         padding: 10px;
         display: flex;
         justify-content: center;
+    }
+
+    /*Info*/
+    .info-text {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .info-text h1{
+        padding-bottom: 20px;
+    }
+    .icons {
+        padding-bottom: 75px;
+        gap: 30px;
+    }
+    /*content*/
+    .content {
+        flex-direction: column-reverse;
+        padding: 0px 20px 0px 20px;
+        height: 500px;
+    }
+    .content img {
+        height: 20vh;
+        width: 100vw;
+        object-fit: cover;
+        object-position: top;
+    }
+    .content-text {
+        text-align: center;
+        padding-top: 75px;
+    }
+
+        /*Footer*/
+    .footer-text ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
     }
 }
 
