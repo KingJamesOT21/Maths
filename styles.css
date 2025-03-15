@@ -68,8 +68,8 @@
     padding: 10px 35px 10px 35px;
     border-radius: 50px;
     color: white;
-    background-color: rgb(39, 58, 224);
-    border: 2px solid rgb(39, 58, 224);
+    background-color: #f16124;
+    border: 2px solid #f16124;
     cursor: pointer;
     font-family: "kiro", sans-serif;
     font-weight: 400;
@@ -109,7 +109,7 @@
 .stat p {
     font-weight: 400;
     font-size: 10px;
-    color: darkgray;
+    color: #7e4fbd;
 }
 /*The Right Side of Hero Section!*/
 .right {
@@ -125,7 +125,7 @@
     font-family: "kiro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(225, 223, 223);
+    background-color:  #f1f1f1;
 }
 .info-text {
     display: flex;
@@ -334,14 +334,13 @@ footer {
     /*hero*/
     .hero {
         flex-direction: column;
-        justify-content: start;
-        height: 100vh;
+        justify-content: center;
 
     }
     .left {
         width: 100vw;
-        height: 80vh;
-        padding: 30px 50px 30px 50px;
+        height: 650px;
+        padding: 80px 50px 30px 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -360,15 +359,16 @@ footer {
     }
     .right {
         width: 100vw;
-        height: 60vh;
+        height: 300px;
         padding: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     .right img {
-        width: 80vw;
-        height: 80vw;
+        width: 300px;
+        height: 300px;
     }
     .main-text {
         font-size: 50px;
@@ -376,9 +376,13 @@ footer {
     }
     .sub-text {
         font-size: 20px;
+        margin-bottom: 12px;
         padding: 5px 50px 5px 50px;
     }
     /*Info*/
+    .info {
+        margin-top: 100px;
+    }
     .info-text {
         flex-direction: column;
         text-align: center;
