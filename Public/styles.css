@@ -268,14 +268,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 75px 40px 75px;
+    padding: 10vw;
     display: none;
 }
 .logo-mobile {
     font-family: "kiro", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /*Adaptive Display*/
@@ -289,28 +289,49 @@ footer {
     /*hero*/
     .hero {
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 1100px;
+        justify-content: start;
+        height: 100vh;
+
     }
     .left {
         width: 100vw;
-        height: 50vh;
-        padding: 40px 100px 20px 100px;
+        height: 45vh;
+        padding: 30px 90px 30px 90px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+    }
+    .stats {
+        margin: 40px;
+        font-size: 13px;
+    }
+    .stats p {
+        font-size: 9px;
+    }
+    .btn1, .btn2{
+        margin: 0 0 10px 0;
+        font-size: 8px;
     }
     .right {
         width: 100vw;
-        height: 85vh;
+        height: 60vh;
         padding: 10px;
         display: flex;
+        align-items: center;
         justify-content: center;
     }
-
+    .right img {
+        width: 80vw;
+        height: 80vw;
+    }
+    .main-text {
+        font-size: 29px;
+        margin-bottom: 10px;
+    }
+    .sub-text {
+        font-size: 10px;
+    }
     /*Info*/
     .info-text {
         flex-direction: column;
@@ -324,6 +345,7 @@ footer {
     .icons {
         padding-bottom: 75px;
         gap: 30px;
+        padding-left: 0px;
     }
     /*content*/
     .content {
