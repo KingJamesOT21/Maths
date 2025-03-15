@@ -340,14 +340,17 @@ footer {
     .left {
         width: 100vw;
         height: 650px;
-        padding: 80px 50px 30px 50px;
+        padding: 40px 50px 30px 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .right {
+        display: none;
+    }
     .stats {
-        margin: 40px;
+        margin: 80px 20px 20px 20px;
         font-size: 16px;
     }
     .stats p {
@@ -357,22 +360,11 @@ footer {
         margin: 0 0 10px 0;
         font-size: 15px;
     }
-    .right {
-        width: 100vw;
-        height: 300px;
-        padding: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    .right img {
-        width: 300px;
-        height: 300px;
-    }
+    
     .main-text {
         font-size: 50px;
         margin-bottom: 10px;
+
     }
     .sub-text {
         font-size: 20px;
@@ -380,9 +372,7 @@ footer {
         padding: 5px 50px 5px 50px;
     }
     /*Info*/
-    .info {
-        margin-top: 100px;
-    }
+
     .info-text {
         flex-direction: column;
         text-align: center;
