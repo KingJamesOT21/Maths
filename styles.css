@@ -32,8 +32,8 @@
     padding: 10px 35px 10px 35px;
     border-radius: 50px;
     color: white;
-    background-color: rgb(242, 199, 42);
-    border: 2px solid rgb(242, 199, 42);
+    background-color: rgb(56, 169, 255);
+    border: 2px solid rgb(56, 169, 255);
     cursor: pointer;
     font-family: "kiro", sans-serif;
     font-weight: 400;
@@ -125,12 +125,14 @@
     font-family: "kiro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color:  #f1f1f1;
+    background-color:  rgb(47, 47, 47);
+    color: white;
 }
 .info-text {
     display: flex;
-    justify-content: space-between;
-    padding: 40px 200px 80px 200px;
+    justify-content: center;
+    padding: 60px 200px 40px 200px;
+    text-align: center;
 }
 .info-text h1 {
     font-family: "kiro", sans-serif;
@@ -140,16 +142,16 @@
 .icons {
     display: flex;
     justify-content: space-between;
-    padding: 0 100px 40px 100px;
+    padding: 0 100px 60px 100px;
 }
 
 /*Content Section!*/
 .content {
-    height: 65vh;
-    display: flex;
+    height: 75vh;
+    display: none;
     align-items: center;
     justify-content: space-between;
-    padding: 0 200px 0 200px;
+    padding: 0 300px 0 300px;
 }
 .content img {
     height: 400px;
@@ -171,7 +173,8 @@
 .reviews {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 70vh;
+    justify-content: center;
 }
 .review-h1  {
     font-family: "kiro", sans-serif;
@@ -197,6 +200,7 @@
     display: flex;
     flex-direction: column;
     width: 200px;
+    color: white;
 }
 .box svg {
     padding: 20px 0 0 10px;
@@ -229,10 +233,20 @@
 .user-name {
     font-weight: bold;
     font-size: 10px;
+    color: black;
 }
 .user-handle {
     font-size: 8px;
     color: gray;
+}
+.orange {
+    background-color: #f16124;
+}
+.purple {
+    background-color: #7e4fbd;
+}
+.blue {
+    background-color: rgb(56, 169, 255);;
 }
 
 /*Footer!*/
