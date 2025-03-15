@@ -167,6 +167,41 @@
     padding-bottom: 20px;
 }
 
+/*Review Section!*/
+.reviews {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+.review-h1  {
+    font-family: "kiro", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+.text-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 375px 0 375px;
+    margin-top: 20px;
+}
+.box {
+    border: solid 2px black;
+    padding: 20px;
+    font-family: "kiro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+.user {
+    display: flex;
+    margin-top: 10px;
+}
+.user p {
+    padding-left: 10px;
+}
 
 /*Footer!*/
 footer {
