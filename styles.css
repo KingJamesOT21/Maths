@@ -330,8 +330,8 @@ footer {
     }
     .left {
         width: 100vw;
-        height: 45vh;
-        padding: 30px 90px 30px 90px;
+        height: 80vh;
+        padding: 30px 50px 30px 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -339,14 +339,14 @@ footer {
     }
     .stats {
         margin: 40px;
-        font-size: 13px;
+        font-size: 16px;
     }
     .stats p {
-        font-size: 9px;
+        font-size: 10px;
     }
     .btn1, .btn2{
         margin: 0 0 10px 0;
-        font-size: 8px;
+        font-size: 15px;
     }
     .right {
         width: 100vw;
@@ -361,11 +361,12 @@ footer {
         height: 80vw;
     }
     .main-text {
-        font-size: 29px;
+        font-size: 50px;
         margin-bottom: 10px;
     }
     .sub-text {
-        font-size: 10px;
+        font-size: 20px;
+        padding: 5px 50px 5px 50px;
     }
     /*Info*/
     .info-text {
