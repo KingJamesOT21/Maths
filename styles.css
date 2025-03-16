@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-y: auto; /* Allow vertical scrolling */
+    overflow-x: hidden; /* Prevent scrolling past the top/bottom */
+}
+
+
+body {
+    overscroll-behavior-y: contain; /* Prevent the page from "bouncing" when reaching top/bottom */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+}
 /*Nav Bar!*/
 .navbar {
     display: flex;
