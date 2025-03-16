@@ -448,13 +448,15 @@ footer {
     /*Reviews*/
     .text-boxes {
         padding: 0px;
-        justify-content: space-around;
-        justify-content: center;
+        display: flex;
+        overflow-x: auto;
     }
     .box {
-        margin: 0px 10px 0px 10px;
+        margin: 0px 15px 0px 15px;
     }
-   
+    .text-boxes::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, Edge */
+    }
     /*Footer*/
     .footer-text ul{
         list-style: none;
