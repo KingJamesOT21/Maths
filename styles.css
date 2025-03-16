@@ -274,7 +274,10 @@ footer {
     flex-direction: row;
     gap: 50px;
 }
-
+.footer-text{
+    display: flex;
+    justify-content: center;
+}
 .footer-text a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -361,12 +364,14 @@ footer {
 
 /*Adaptive Display*/
 @media (max-width: 756px) {
+    /*NavBar*/
     .navbar {
         display: none;
     }
     .navbar-mobile {
         display: flex;
     }
+
     /*hero*/
     .hero {
         flex-direction: column;
@@ -407,8 +412,8 @@ footer {
         margin-bottom: 12px;
         padding: 5px 50px 5px 50px;
     }
-    /*Info*/
 
+    /*Info*/
     .info-text {
         flex-direction: column;
         text-align: center;
@@ -420,33 +425,36 @@ footer {
     }
     .icons {
         padding-bottom: 75px;
-        gap: 30px;
-        padding-left: 0px;
+        padding: 0px 40px 50px 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
+        gap: 20px; 
     }
-    /*content*/
-    .content {
-        flex-direction: column-reverse;
-        padding: 0px 20px 0px 20px;
-        height: 500px;
-    }
-    .content img {
-        height: 20vh;
-        width: 100vw;
-        object-fit: cover;
-        object-position: top;
-    }
-    .content-text {
-        text-align: center;
-        padding-top: 75px;
+    .icon {
+        padding: 0;
     }
 
-
-        /*Footer*/
+    /*Reviews*/
+    .text-boxes {
+        padding: 0px;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    .box {
+        margin: 0px 10px 0px 10px;
+    }
+   
+    /*Footer*/
     .footer-text ul{
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        gap: 15px;
+        font-size: 13px;
+    }
+    .footer-logo {
+        margin: 40px 40px 30px 40px;
     }
 }
 
