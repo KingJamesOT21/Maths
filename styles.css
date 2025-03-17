@@ -468,7 +468,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10vw;
+    padding: 50px;
     display: none;
 }
 .logo-mobile {
@@ -496,37 +496,54 @@ footer {
     }
     .left {
         width: 100vw;
-        height: 600px;
+        height: 500px;
         padding: 60px 50px 30px 50px;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    .left-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
     .right {
         display: none;
     }
     .stats {
         margin: 50px 20px 20px 20px;
-        font-size: 16px;
+        font-size: 3vw;
+    }
+    .stats-div {
+        height: 5vw;
     }
     .stats p {
-        font-size: 10px;
+        font-size: 1.75vw;
     }
+
     .btn1, .btn2{
         margin: 0 0 10px 0;
-        font-size: 15px;
+        font-size: 2vw;
+        padding: 2vw 3vw 2vw 3vw;
     }
-    
+    .btn1 {
+        width: 40vw;
+    }
+    .btn2 {
+        width: 30vw;
+        font-size: 1.75vw;
+    }
     .main-text {
-        font-size: 50px;
+        font-size: 8vw;
         margin-bottom: 10px;
+        margin: 10px 3vw 10px 3vw;
 
     }
     .sub-text {
-        font-size: 20px;
+        font-size: 3vw;
         margin-bottom: 12px;
-        padding: 5px 50px 5px 50px;
+        padding: 5px 10vw 5px 10vw;
     }
 
     /*Info*/
@@ -567,7 +584,7 @@ footer {
 }
 
 .slider {
-    width: 60vw;
+    width: 250px;
     height: 300px;
     overflow: hidden;
     border-radius: 1em;
@@ -584,7 +601,7 @@ footer {
 }
 
 .box {
-    width: 60vw;
+    width: 250px;
     height: 300px;
     flex-shrink: 0;
     padding: 20px;
