@@ -1,9 +1,9 @@
-
 const slider = document.querySelector(".slider");
 const textBoxes = document.querySelector(".text-boxes");
 const boxes = document.querySelectorAll(".text-boxes .box");
 const dots = document.querySelectorAll(".dot");
-
+const body = document.body;
+const html = document.documentElement;
 
 let currentIndex = 0;
 const totalBoxes = boxes.length;
@@ -43,7 +43,6 @@ function resetAutoSlide() {
     startAutoSlide();
 }
 
-
 updateSliderPosition();
 startAutoSlide();
 
@@ -52,4 +51,31 @@ slider.addEventListener('mouseenter', () => {
 });
 slider.addEventListener('mouseleave', () => {
     startAutoSlide();
+});
+
+const links = document.querySelector(".mobile-links");
+const menu = document.querySelector('.menu');
+
+menu.addEventListener('click', function() {
+    if (menu.classList.contains('menu')) {
+        // Open the menu
+        links.style.opacity = '1';
+        links.style.pointerEvents = 'all';
+        menu.classList.add('close');
+        menu.classList.remove('menu');
+        body.classList.add('no-scroll');
+        html.classList.add('no-scroll');
+        window.scrollTo({ // Scroll to top
+            top: 0,
+            behavior: 'smooth'
+        });
+    } else {
+        // Close the menu
+        links.style.opacity = '0';
+        links.style.pointerEvents = 'none';
+        menu.classList.remove('close');
+        menu.classList.add('menu');
+        body.classList.remove('no-scroll');
+        html.classList.remove('no-scroll');
+    }
 });
