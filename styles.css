@@ -60,7 +60,8 @@ body {
 /*The Left Side of Hero Section!*/
 .left {
     width: 50vw;
-    padding: 80px 0 0 250px;
+    padding: 50px 10px 50px 100px;
+
 }
 .main-text {
     font-family: "kiro", sans-serif;
@@ -127,7 +128,6 @@ body {
 /*The Right Side of Hero Section!*/
 .right {
     width: 50vw;
-    height: 85vh;
 }
 .right img {
     height: 70vh;
@@ -471,7 +471,7 @@ footer {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,11 +488,10 @@ footer {
     color: #2b2b2b;
 }
 .navbar-mobile {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    display: none;
 }
 .logo-mobile {
     font-family: "kiro", sans-serif;
@@ -510,15 +509,33 @@ footer {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-/*Adaptive Display*/
-@media (max-width: 756px) {
-    /*NavBar*/
+.mobile-legal {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, -10%);
+    font-size: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 300ms;
+}
+
+/*mobile navbar*/
+@media (max-width: 1050px) {
     .navbar {
         display: none;
     }
     .navbar-mobile {
         display: flex;
     }
+}
+
+
+
+/*Adaptive Display*/
+@media (max-width: 756px) {
+    /*NavBar*/
+
 
     /*hero*/
     .hero {
@@ -543,8 +560,10 @@ footer {
         display: none;
     }
     .stats {
-        margin: 110px 20px 20px 20px;
+        margin: 110px 20px 40px 20px;
         font-size: 16px;
+        scale: 110%;
+        z-index: -1;
     }
     .stats-div {
         height: 5vw;
@@ -601,114 +620,121 @@ footer {
 
 /* Reviews */
 
-.reviews {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-.review-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.slider {
-    width: 250px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 1em;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
-    background-color: white;
-}
-
-.text-boxes {
-    padding: 0px;
-    margin: 0;
-    display: flex;
-    width: 100%; /* 3 slides */
-    transition: transform 300ms ease-in-out;
-}
-
-.box {
-    width: 250px;
-    height: 300px;
-    flex-shrink: 0;
-    padding: 20px;
-    border-radius: 0px;
-    box-sizing: border-box;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.text-boxes::-webkit-scrollbar {
-    display: none;
-}
-
-.review-text {
-    margin: 10px 0;
-    
-}
-
-.user-box {
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
-}
-
-.user-box img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.user-info {
-    display: flex;
-    flex-direction: column;
-}
-
-.dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    margin: 0 5px;
-    background-color: #a7a3a3;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background-color: #7e4fbd;
-}
-
-.orange { background-color: #ff9800; }
-.purple { background-color: #7e4fbd; }
-.blue { background-color: #2196f3; }
-
-
-    /*Footer*/
-    .footer-text ul{
-        list-style: none;
+    .reviews {
+        position: relative;
         display: flex;
-        flex-direction: row;
-        gap: 15px;
-        font-size: 13px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
-    .footer-logo {
-        margin: 40px 40px 30px 40px;
+
+    .review-h1 {
+        text-align: center;
+        margin-bottom: 20px;
     }
+
+    .slider {
+        width: 250px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 1em;
+        box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+        background-color: white;
+    }
+
+    .text-boxes {
+        padding: 0px;
+        margin: 0;
+        display: flex;
+        width: 100%; /* 3 slides */
+        transition: transform 300ms ease-in-out;
+    }
+
+    .box {
+        width: 250px;
+        height: 300px;
+        flex-shrink: 0;
+        padding: 20px;
+        border-radius: 0px;
+        box-sizing: border-box;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .text-boxes::-webkit-scrollbar {
+        display: none;
+    }
+
+    .review-text {
+        margin: 10px 0;
+        
+    }
+
+    .user-box {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .user-box img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        background-color: #a7a3a3;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .dot.active {
+        background-color: #7e4fbd;
+    }
+
+    .orange { background-color: #ff9800; }
+    .purple { background-color: #7e4fbd; }
+    .blue { background-color: #2196f3; }
+
+
+        /*Footer*/
+        .footer-text ul{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            font-size: 13px;
+        }
+        .footer-logo {
+            margin: 40px 40px 30px 40px;
+        }
 }
 
-@media (max-width: 1024px) {
+/*Medium Screen Size*/
+@media (min-width: 757px) {
+    .navbar {
+        padding: 40px 80px 40px 80px;
+    }
+    .left {
+        padding: 50px 10px 50px 100px;
+    }
     
 }
