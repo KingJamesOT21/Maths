@@ -1,0 +1,118 @@
+/* Base styles (mobile-first) */
+.about-content {
+    padding: 20px;
+}
+
+.about-content h2 {
+    margin-top: 50px;
+
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f16124; /* Matching a color from the first page */
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.team {
+    padding: 20px;
+}
+
+.team h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f16124;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Ensure hero image is hidden on mobile */
+.hero .right {
+    display: none;
+}
+
+/* Media query for larger screens (min-width: 757px) */
+@media (min-width: 757px) {
+    /* Hero section adjustments */
+    .hero {
+        flex-direction: row;
+    }
+
+    .hero .left {
+        width: 50vw;
+        padding: 50px 10px 50px 100px;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .hero .right {
+        display: block;
+        width: 50vw;
+    }
+
+    .hero .right img {
+        height: 70vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* About content adjustments */
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        padding: 40px 100px;
+    }
+
+    .mission, .vision {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    /* Team section adjustments */
+    .team-members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        width: 30%;
+        margin: 10px;
+    }
+}

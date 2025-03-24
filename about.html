@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mathamatic Society</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/afr6zpi.css">
+    <link rel="stylesheet" href="about.css">
+
 </head>
 <body>
-    <!--Nav Bar Full Screen!-->
+    <!-- Regular Navbar (hidden on mobile) -->
     <nav class="navbar">
         <div class="logo">TheMathematicsSociety</div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="tutor.html">Tutor</a></li>
             <li><a href="admission.html">Admission</a></li>
@@ -21,30 +21,76 @@
         </ul>
         <button class="btn-nav">Connect</button>
     </nav>
-
-    <!--Nav Bar Mobile-->
+    <!-- Mobile Links (hidden by default) -->
     <nav class="navbar-mobile">
         <div class="logo-mobile">TheMathematicsSociety</div>
-        <a href="#"><svg width="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M4 8H20M4 16H12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+        <svg class="menu" width="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Menu / Menu_Alt_01"> <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
     </nav>
 
-    <!--Footer!-->
+    <div class="mobile-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="tutor.html">Tutor</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>  
+    </div> 
+    <div class="mobile-legal">© The Mathematics Society 2025</div>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="left">
+            <h1 class="main-text">About Us</h1>
+            <p class="sub-text">Learn more about our company and team.</p>
+        </div>
+        <div class="right">
+            <img src="user1.png" alt="About Image">
+        </div>
+    </div>
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to provide high-quality education and resources to help individuals achieve their goals.</p>
+        </div>
+        <div class="vision">
+            <h2>Our Vision</h2>
+            <p>Our vision is to be a leading provider of online education, empowering learners worldwide.</p>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section class="team">
+        <h2>Our Team</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="user1.png" alt="About Image">
+                <h3>George</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="user1.png" alt="About Image">
+                <h3>Not George</h3>
+                <p>TUTOR</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer-logo">The Mathematics Society</div>
             <div class="footer-text">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Tutor</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="tutor.html">Tutor</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
             </div>
         <div class="divider"></div>
         <div class="legal">© The Mathematics Society 2025</div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
