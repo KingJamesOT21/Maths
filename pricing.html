@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Mathamatic Society</title>
+    <title>Pricing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.typekit.net/afr6zpi.css">
+    <link rel="stylesheet" href="pricing.css">
 </head>
 <body>
-    <!--Nav Bar Full Screen!-->
+    <!-- Nav Bar Full Screen -->
     <nav class="navbar">
         <div class="logo">TheMathematicsSociety</div>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="tutor.html">Tutor</a></li>
             <li><a href="admission.html">Admission</a></li>
@@ -22,29 +21,153 @@
         <button class="btn-nav">Connect</button>
     </nav>
 
-    <!--Nav Bar Mobile-->
+    <!-- Nav Bar Mobile -->
     <nav class="navbar-mobile">
         <div class="logo-mobile">TheMathematicsSociety</div>
-        <a href="#"><svg width="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24000000000000005"></g><g id="SVGRepo_iconCarrier"> <path d="M4 12H20M4 8H20M4 16H12" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+        <svg class="menu" width="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <g id="Menu / Menu_Alt_01">
+                    <path id="Vector" d="M12 17H19M5 12H19M5 7H19" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </svg>
     </nav>
 
-    <!--Footer!-->
+    <!-- Mobile Links -->
+    <div class="mobile-links">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="tutor.html">Tutor</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+    <div class="mobile-legal">© The Mathematics Society 2025</div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="hero-bg">
+            <section class="hero">
+                <h1>Pricing Plans</h1>
+                <p>Choose the plan that's right for you.</p>
+                <a href="#feature-comparison">Compare Plans</a>
+            </section>            
+        </div>
+
+        <section class="pricing-cards">
+            <div class="card">
+                <h2>Leaner</h2>
+                <p class="price orange-text">R500 / month</p>
+                <h3>Includes:</h3>
+                <ul>
+                    <li><td>✓ </td>4 Lessons per month</li>
+                    <li><td>✓ </td>Customised Learning</li>
+                    <li><td>✓ </td>Email Support</li>
+                </ul>
+                <button class="orange">Sign Up</button>
+            </div>
+            <div class="card popular">
+                <h2>Learner +</h2>
+                <p class="price blue-text">R1 000 / month</p>
+                <h3>Everything in <span class="orange-text">Learner</span>, and:</h3>
+                <ul>
+                    <li><td>✓ </td>In-Depth Explinations</li>
+                    <li><td>✓ </td>Video-Call Support</li>
+                    <li><td>✓ </td>Detailed Analysises</li>
+                    <li><td>✓ </td>Customised Feedback</li>
+                </ul>
+                <button class="blue">Sign Up</button>
+            </div>
+            <div class="card">
+                <h2>Elite Learner</h2>
+                <p class="price purple-text">Contact Us</p>
+                <h3>Everything in <span class="blue-text">Learner +</span>, and:</h3>
+                <ul>
+                    <li><td>✓ </td>All Features</li>
+                    <li><td>✓ </td>Unlimited Users</li>
+                    <li><td>✓ </td>24/7 Support</li>
+                    <li><td>✓ </td>Dedicated Manager</li>
+                    <li><td>✓ </td>Custom Integrations</li>
+                </ul>
+                <button class="purple">Contact Us</button>
+            </div>
+        </section>
+        <div class="compare">
+            <section id="feature-comparison" class="feature-comparison">
+                <h2>Compare Our Plans</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Starter</th>
+                            <th>Professional</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr> 
+                            <td>Basic Features</td>
+                            <td class="tick-orange">✓</td>
+                            <td class="tick-orange">✓</td>
+                            <td class="tick-orange">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Advanced Features</td>
+                            <td></td>
+                            <td class="tick-orange">✓</td>
+                            <td class="tick-orange">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Users</td>
+                            <td>5</td>
+                            <td>25</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Support</td>
+                            <td>Email</td>
+                            <td>Priority</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td>Analytics Dashboard</td>
+                            <td></td>
+                            <td class="tick-orange">✓</td>
+                            <td class="tick-orange">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Dedicated Manager</td>
+                            <td></td>
+                            <td></td>
+                            <td class="tick-orange">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer-logo">The Mathematics Society</div>
             <div class="footer-text">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Tutor</a></li>
-                    <li><a href="#">Admission</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="tutor.html">Tutor</a></li>
+                    <li><a href="admission.html">Admission</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
-            </div>
+        </div>
         <div class="divider"></div>
         <div class="legal">© The Mathematics Society 2025</div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
