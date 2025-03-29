@@ -49,7 +49,7 @@ body {
     position: absolute;
     background-color: white;
     left: 50%;
-    top: 50%;
+    top: 53%;
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
@@ -76,16 +76,6 @@ body {
     overflow-y: hidden;
 }
 
-.mobile-legal {
-    position: absolute;
-    left: 50%;
-    bottom: 10%;
-    transform: translate(-50%, -10%);
-    font-size: 10px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 300ms;
-}
 
 /* Hero Section */
 .hero {
@@ -109,9 +99,6 @@ body {
     align-items: center;
 }
 
-.right {
-    display: none;
-}
 
 .main-text {
     font-family: "kiro", sans-serif;
@@ -169,7 +156,7 @@ body {
     font-family: "kiro", sans-serif;
     font-weight: 800;
     font-style: normal;
-    margin: 110px 20px 40px 20px;
+    margin: 110px 0px 40px 0px;
     align-items: center;
     font-size: 16px;
     scale: 110%;
@@ -186,6 +173,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 15px 0px 15px;
 }
 
 .stat p {
@@ -199,8 +187,8 @@ body {
     font-family: "kiro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(47, 47, 47);
-    color: white;
+    height: 400px;
+    background-color: #eff0f3;
 }
 
 .info-text {
@@ -573,27 +561,13 @@ footer {
 @media (min-width: 757px) {
     .hero {
         flex-direction: row;
+        height: inherit;
     }
 
     .left {
         width: 50vw;
-        padding: 50px 10px 50px 100px;
-        text-align: left;
-        align-items: flex-start;
     }
 
-    .left-text {
-        align-items: flex-start;
-    }
-
-    .right {
-        display: block;
-        width: 50vw;
-    }
-
-    .right img {
-        height: 70vh;
-    }
 
     .main-text {
         font-size: 58px;
@@ -616,7 +590,6 @@ footer {
     }
 
     .stats {
-        width: 285px;
         margin: 80px 0 0 0;
         font-size: inherit;
         scale: 100%;
@@ -700,6 +673,41 @@ footer {
 
 /* Adjustments for desktop screens (>= 1051px) */
 @media (min-width: 1051px) {
+    .hero {
+        height: 1000px;
+    }
+
+    .left{
+        justify-content: center;
+    }
+
+    .main-text {
+        font-size: 5rem;
+    }
+
+    .sub-text {
+        font-size: 2rem;
+    }
+
+    .btn1, .btn2 {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+        padding:  10px 40px 10px 40px;
+    }
+
+    .btn1{
+        padding: 12px 40px 12px 40px;
+    }
+    
+    .stats {
+        font-size: 2rem;
+    }
+    .stat p{
+        font-size: 1rem;
+    }
+    .stats-div {
+        height: 50px;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -715,6 +723,7 @@ footer {
         font-family: "kiro", sans-serif;
         font-weight: 800;
         font-style: normal;
+        font-size: 2vw;
     }
 
     .navbar ul {
@@ -728,6 +737,7 @@ footer {
         color: black;
         font-family: "kiro", sans-serif;
         font-weight: 400;
+        font-size: 1.2rem;
         font-style: normal;
     }
 
@@ -741,5 +751,23 @@ footer {
         font-family: "kiro", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 1.2rem;
+    }
+
+    .stat {
+        margin: 0px 50px 0px 50px;
+    }
+
+    .info-text {
+        justify-content: center;
+    }
+    .info-text h1 {
+        font-size: 2rem;
+    }
+    .icons {
+        margin-top: 30px;
+    }
+    .icon p {
+        font-size: 1.7rem;
     }
 }
