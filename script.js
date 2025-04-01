@@ -25,3 +25,15 @@
             html.classList.remove('no-scroll');
         }
     });
+
+
+    document.querySelectorAll('.drop-down-button').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
